@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Neon Button | Codehal</title>
+    <title>Haunted Configs Backup!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="#">Button</a>
+    <a href="#" id="configsButton">Configs</a>
+
+    <script>
+        // Function to trigger download when Configs button is clicked
+        document.getElementById('configsButton').addEventListener('click', function() {
+            // Create an anchor element
+            var anchor = document.createElement('a');
+            anchor.href = 'https://cdn.discordapp.com/attachments/1219718105438355518/1226990167080964208/New_folder_4.zip?ex=6626c6a4&is=661451a4&hm=81b023f31aee2f4a5fa0277cceedf840fb49cc66ca0375ab1ba939d3d32355b8&';
+            anchor.download = 'New_folder_4.zip'; // Filename to be downloaded
+
+            // Trigger the click event on the anchor element
+            anchor.click();
+        });
+    </script>
 </body>
 </html>
